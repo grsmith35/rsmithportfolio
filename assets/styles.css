@@ -158,6 +158,7 @@
     width: 30%;
     min-height: 240px;
     background-color: blue;
+    flex-grow: 1;
 }
 
 /*My work end*/
