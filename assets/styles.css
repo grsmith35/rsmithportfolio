@@ -5,7 +5,7 @@
 
 /*Start the header*/
 .header {
-    background-color: antiquewhite;
+    background-color: black;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -14,8 +14,9 @@
 
 .header h1 {
     size: 40px;
-    color: rgb(64, 138, 113);
+    color: rgb(245, 232, 51);
     padding: 4px 10px;
+    font-family: American Typewriter !important;
 }
 
 .header nav ul {
@@ -28,29 +29,29 @@
 }
 
 .header a {
-    color: rgba(14, 87, 62, 0.5);
+    color: rgba(245, 232, 51, 0.75);
     font-weight: bold;
     text-decoration: none;
     padding: 0 15px 0 15px;
     font-size: 18px;
     align-items: center;
-    border-top: 1px solid black;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    font-family: American Typewriter, serif;
 }
 
 .header a:hover {
-    background-color: darkblue;
-    color: darkgray;
-    box-shadow: 0 0 10px black;
+    background-color: rgba(245, 232, 51, 0.50);    color: darkgray;
+    box-shadow: 0 0 10px white;
 }
 /*End the header*/
 
 /*Start the hero*/
 .hero {
-    background-color: rgb(104, 104, 207);
+    background-color: black;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -67,7 +68,7 @@
 
 .hero h2 {
     font-size: 32px;
-    color: chartreuse;
+    color: rgba(245, 232, 51, 0.75);
     padding: 10px 0 10px 0;
 }
 
@@ -81,6 +82,7 @@
 
 .about-me {
     width: 50%;
+    margin: 10px;
 }
 
 .about-me ul li {
@@ -101,27 +103,27 @@
 /*My work section*/
 
 .my-work {
-    background-color: beige;
+    background-color: black;
 }
 
 .work-tiles {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-end;
     padding: 10px;
     align-items: center;
 }
 
 .my-work h2 {
     font-size: 32px;
-    color: chartreuse;
+    color: rgba(245, 232, 51, 0.75);
     padding: 10px 10px;
     justify-content: center;
     display: block;
 }
 
 .python-skill {
-    border: 1px solid black;
+    border: 1px solid rgba(245, 232, 51, 0.75);
     border-radius: 30px;
     margin: 5px 10px;
     width: 30%;
@@ -130,13 +132,13 @@
 }
 
 .head-liner {
-    border: 1px solid black;
+    border: 1px solid rgba(245, 232, 51, 0.75);
     border-radius: 30px;
-    margin: 5px 10px 5px 15px;
+    margin-left: 30%;
     background-color: brown;
     width: 60%;
     min-height: 450px; 
-    min-width: 300px
+    flex-grow: 2
 }
 
 .work-tiles h3 {
@@ -150,7 +152,7 @@
 }
 
 .mobileapp {
-    border: 1px solid black;
+    border: 1px solid rgba(245, 232, 51, 0.75);
     border-radius: 30px;
     margin: 5px 10px;
     width: 30%;
@@ -162,17 +164,56 @@
 
 /*Footer start*/
 .footer {
-    background-color: rgb(56, 94, 145);
+    background-color: black;
+    padding: 10px;
 }
 
 .footer h2 {
     font-size: 26px;
     padding: 5px 5px;
+    color: rgba(245, 232, 51, 0.75);
 }
 
 .footer li {
     font-size: 20px;
     padding: 2px 0 2px 5px;
+    color: white;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
 }
 
 /*Footer end*/
+
+/*media query*/
+@media only screen and (max-width: 600px){
+    .about-me {
+        width: 85%;
+        padding: auto;
+    }
+    
+    .about-me p {
+        text-align: center;
+    }
+
+    .work-tiles {
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .head-liner {
+        margin: auto;
+        width: 75%;
+        flex-grow: 1;
+    }
+
+    .python-skill {
+        width: 65%;
+    }
+
+    .mobileapp {
+        width: 65%;
+    }
+}
